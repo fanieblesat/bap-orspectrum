@@ -10,3 +10,4 @@ venv/
 .DS_Store
 Thumbs.db
 learning_curve_*.csv
+burst_arrivals.py

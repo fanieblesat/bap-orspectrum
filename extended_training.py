@@ -1,22 +1,3 @@
-"""
-Extended DQN Training (10,000 episodes) — Addresses W2
-=======================================================
-Runs DQN on the Large instance for 10K episodes to definitively
-show whether the learning curve has plateaued or is still improving.
-
-Outputs:
-  1. Per-episode costs saved to learning_curve_10k.csv
-  2. TikZ coordinates for LaTeX learning curve figure
-  3. Plateau analysis: compares cost at 2K, 5K, 10K episodes
-
-USAGE:
-    python run_extended_training.py
-
-REQUIRES:
-    hamburg_large_bap_vessels_with_weather.csv
-    hamburg_large_bap_berths.csv
-"""
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -34,7 +15,7 @@ random.seed(SEED)
 
 
 # ============================================================
-# ENVIRONMENT (exact match to your DQN code)
+# ENVIRONMENT
 # ============================================================
 class RealDataBAPEnv:
     def __init__(self, vessels_csv, berths_csv):
@@ -314,7 +295,7 @@ if __name__ == "__main__":
         else:
             print("→ STILL IMPROVING: consider training longer")
 
-    # TikZ coordinates for paper
+    # TikZ coordinates for latex
     print("\n" + "=" * 65)
     print("TikZ COORDINATES (rolling 200-episode average):")
     print("=" * 65)

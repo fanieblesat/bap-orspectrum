@@ -1,29 +1,3 @@
-"""
-Burst Arrival Experiment — Addresses W5
-========================================
-Tests whether the DQN outperforms FCFS when vessel arrivals are
-clustered (burst pattern) rather than uniformly distributed.
-
-Hypothesis: FCFS degrades under burst arrivals because it cannot
-anticipate cascading delays. The DQN's sequential decision-making
-should provide an advantage when immediate greedy dispatching
-creates bottlenecks.
-
-Generates 3 arrival patterns for 40 vessels, 16 berths:
-  1. Uniform: arrivals spread evenly (current test — FCFS wins)
-  2. Moderate burst: 3 clusters of 13-14 vessels
-  3. Heavy burst: 2 clusters of 20 vessels
-
-USAGE:
-    python run_burst_arrivals.py
-
-REQUIRES:
-    hamburg_large_bap_berths.csv  (berth definitions)
-    hamburg_large_bap_vessels_with_weather.csv  (for vessel properties)
-
-    OR: will generate synthetic vessels if CSV not found
-"""
-
 import torch
 import torch.nn as nn
 import torch.optim as optim

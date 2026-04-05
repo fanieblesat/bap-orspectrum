@@ -49,8 +49,8 @@ plt.savefig('hamburg_large_convergence.png')
 import matplotlib.pyplot as plt
 import numpy as np
 
-# --- 1. DATA FROM YOUR SMALL SCENARIO RUN ---
-# These are the 20 periodic episode costs you provided from your console logs
+# --- 1. DATA FROM SMALL SCENARIO RUN ---
+# These are the 20 periodic episode provided from colab console logs
 episodes = np.arange(0, 2000, 100)
 raw_costs_from_logs = np.array([
     90822.57, 84758.47, 94392.83, 86762.00, 87787.70,
@@ -65,7 +65,7 @@ fcfs_baseline = 75522.00
 dqn_eval_avg = 81449.98
 
 # --- 2. PROCESSING FOR VISUALIZATION ---
-# Create a fine grid for realistic training noise representation
+# Fine grid createion for realistic training noise representation
 x_fine = np.arange(0, 2000)
 # Interpolate between periodic log points
 y_interp = np.interp(x_fine, episodes, raw_costs_from_logs)
@@ -98,7 +98,7 @@ plt.axhline(y=fcfs_baseline, color='#DC143C', linestyle='--', linewidth=1.5, lab
 # Final AI Result (DQN Eval)
 plt.axhline(y=dqn_eval_avg, color='#228B22', linestyle=':', linewidth=2, label=f'DQN Greedy Eval ({dqn_eval_avg:,.0f})') # ForestGreen
 
-# Formatting according to OR Spectrum standards
+# Formatting to meet journal standards
 plt.title('DQN Convergence: Hamburg-Small Instance (10 Vessels, 3 Berths)')
 plt.xlabel('Training Episodes')
 plt.ylabel('Total Port Cost (Penalty Units)')
@@ -109,7 +109,7 @@ plt.legend(loc='upper right', fontsize=9)
 plt.ylim(60000, 105000)
 
 plt.tight_layout()
-# Save high-resolution PNG (300 DPI is required for print journals)
+# Save high-resolution PNG 
 plt.savefig('hamburg_small_convergence.png', dpi=300)
 print("Successfully generated 'hamburg_small_convergence.png' at 300 DPI.")
 
@@ -117,8 +117,8 @@ print("Successfully generated 'hamburg_small_convergence.png' at 300 DPI.")
 import matplotlib.pyplot as plt
 import numpy as np
 
-# --- 1. DATA FROM YOUR MEDIUM SCENARIO RUN ---
-# Periodic episode costs from your console logs
+# --- 1. DATA FROM MEDIUM SCENARIO RUN ---
+# Periodic episode costs from colab console logs
 episodes = np.arange(0, 2000, 100)
 raw_costs_from_logs = np.array([
     257314.00, 229143.50, 249481.30, 237688.65, 247629.25,
@@ -159,7 +159,7 @@ plt.plot(x_fine, y_signal, color='#87CEEB', alpha=0.4, label='Episode Real Cost'
 plt.plot(x_ma, y_ma, color='#FF8C00', linewidth=2, label='Moving Average (100 episodes)')
 
 # Add threshold lines
-# Heuristic Baseline (FCFS) - Note how high this is compared to the AI convergence!
+# Heuristic Baseline (FCFS) 
 plt.axhline(y=fcfs_baseline, color='#DC143C', linestyle='--', linewidth=1.5, label=f'FCFS Heuristic Baseline ({fcfs_baseline:,.0f})')
 # Final AI Result (DQN Eval)
 plt.axhline(y=dqn_eval_avg, color='#228B22', linestyle=':', linewidth=2, label=f'DQN Greedy Eval Average ({dqn_eval_avg:,.0f})')

@@ -213,10 +213,9 @@ def train_dqn():
 
         if episode % 100 == 0:
             print(f"Episode {episode}, Total Real Cost: {total_real_cost:.2f}, Epsilon: {epsilon:.2f}")
-            # ==========================================
-    # --- ADD THIS RIGHT HERE ---
+    # ===================================================
     # After the loop finishes, run the strict evaluation!
-    # ==========================================
+    # ===================================================
     print("\nTraining Complete! Running strictly greedy evaluation on stochastic weather...")
 
     # Call the evaluation function using the fully trained policy_net
@@ -224,7 +223,7 @@ def train_dqn():
 
     return final_eval_cost
 
-# Make sure the evaluate_dqn function is pasted somewhere in your file!
+# The evaluate_dqn function needs to be pasted somewhere in file
 def evaluate_dqn(env, policy_net, num_episodes=100):
     print("\n--- STARTING DETERMINISTIC EVALUATION ---")
     total_eval_cost = 0.0

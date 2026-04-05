@@ -15,7 +15,7 @@ num_berths = 3
 V = range(num_vessels)
 B = range(num_berths)
 
-# --- YOUR EXACT DQN WEIGHTS ---
+# --- EXACT DQN WEIGHTS ---
 cost_per_wait_hr = 200.0   # (c_w + c_e * e_wait)
 cost_per_handle_hr = 750.0 # (c_o + c_e * e_handle)
 

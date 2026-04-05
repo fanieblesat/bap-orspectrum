@@ -1,0 +1,7 @@
+torch>=2.0
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.5
+scipy>=1.10
+deap>=1.4
+# gurobipy  # Optional: requires Gurobi license for MIP solver

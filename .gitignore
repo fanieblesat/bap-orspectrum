@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pt
+*.pth
+.ipynb_checkpoints/
+*.egg-info/
+venv/
+.env/
+.DS_Store
+Thumbs.db
+learning_curve_*.csv

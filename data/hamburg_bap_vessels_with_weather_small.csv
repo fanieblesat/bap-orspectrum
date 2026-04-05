@@ -1,0 +1,11 @@
+vessel_id,arrival_time,terminal,vessel_type,L_v,D_v,H_v0,wind_speed,tide_height,f_s,H_v(s),T_s,sea_state
+CTT-F001,2025-04-22T00:03Z,CTT,feeder,152.97,7.12,5.27,10.18,1.25,0.74,6.01,0.18,restricted_waters
+CTT-F002,2025-04-22T02:10Z,CTT,feeder,138.92,7.21,5.86,4.67,3.08,0.5,6.36,0.1,restricted_waters
+CTT-S003,2025-04-22T05:59Z,CTT,seagoing vessel,361.81,11.88,15.49,6.96,1.82,0.62,16.11,0.12,restricted_waters
+CTA-S004,2025-04-22T06:36Z,CTA,seagoing vessel,368.39,13.0,13.8,14.68,1.5,0.87,14.67,0.15,restricted_waters
+CTT-F005,2025-04-22T08:45Z,CTT,feeder,126.75,7.67,5.01,4.83,3.21,0.5,5.51,0.1,restricted_waters
+CTT-F006,2025-04-22T10:02Z,CTT,feeder,135.88,6.94,4.86,6.77,3.11,0.55,5.41,0.1,restricted_waters
+CTA-F007,2025-04-22T11:40Z,CTA,feeder,155.76,6.63,4.13,3.9,3.89,0.5,4.63,0.1,restricted_waters
+CTA-F008,2025-04-22T15:04Z,CTA,feeder,126.37,7.92,6.55,5.53,1.53,0.59,7.14,0.15,restricted_waters
+CTT-F009,2025-04-22T16:57Z,CTT,feeder,148.64,6.93,5.82,2.15,3.0,0.5,6.32,0.1,restricted_waters
+CTA-S010,2025-04-22T17:49Z,CTA,seagoing vessel,384.52,14.36,19.72,14.2,2.48,0.8,20.52,0.1,restricted_waters

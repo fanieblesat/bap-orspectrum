@@ -1,7 +1,7 @@
 # From Shortest Paths to Deep RL — Codebase
 
 **Paper:** From Shortest Paths to Deep Reinforcement Learning: An Extended Graph-Based Formulation of the Berth Allocation Problem under Uncertainty  
-**Venue:** OR Spectrum (under revision)  
+**Venue:** Transportation Research Part B, Special Issue: Mathematical Foundations for Trustworthy AI Applications in Transportation Systems 
 **Authors:** Fabricio Niebles-Atencio, Stefan Voß  
 **Affiliation:** University of Hamburg
 
@@ -113,8 +113,8 @@ All instances use real vessel data from the Port of Hamburg. Weather transitions
   title={From Shortest Paths to Deep Reinforcement Learning: An Extended 
          Graph-Based Formulation of the Berth Allocation Problem under Uncertainty},
   author={Niebles-Atencio, Fabricio and Vo{\ss}, Stefan},
-  journal={OR Spectrum},
-  year={2025},
+  journal={Transportation Research Part B},
+  year={2026},
   note={Under revision}
 }
 ```
